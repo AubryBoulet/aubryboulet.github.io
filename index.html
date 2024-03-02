@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="cover cover-left"></div>
+        <div class="cover cover-right"></div>
+
+        <div class="book">
+            <div class="book-page page-left">
+                <div class="profile-page">
+                    <img src="./profil.png" alt="profile picture">
+                    <h1>Aubry Boulet</h1>
+                    <h3>Developpeur Web et Applicatif</h3>
+
+                    <p>Bonjour, je suis Aubry Boulet, un developpeur web et applicatif.</p>
+                    <p>Depuis mes 15 ans je me suis trouvé une passion pour le developpement et l'informatique en général. Avant tout autodidact je me suis initié à la programation au travers divers langages (VBA, C, GameMaker) mais c'est avec PureBasic que j'ai réelement progressé et developpé des application et jeux.</p>
+                    <p>Après de nombreuses années à developper pour le plaisir, j'ai décidé d'augmenter mon champ de compétences en apprenant le web avec une formation intensive afin d'en faire mon métier.</p>
+
+                    <div class="btn-box">
+                        <a href="#" class="btn btn-cv">Voir mon CV</a>
+                        <a href="#" class="btn btn-contact">Me contacter</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- page 1 et 2 -->
+            <div class="book-page page-right turn" id="turn-1">
+                <!-- page 1 -->
+                <div class="page-front">
+                    <h1 class="title">Experience professionel</h1>
+                    <div class="workexp-box">
+                        <div class="workexp">
+                            <span class="year"><i class='bx bx-calendar'></i>2008-2012</span>
+                            <h3>Mainteneur info-voyageur - SNCF </h3>
+                            <p>Maintenance des moniteurs d'affichage pour informer les voyageurs. Remplacement et réparation des cartes électronique et tubes cathodique</p>
+                        </div>
+                        <div class="workexp">
+                            <span class="year"><i class='bx bx-calendar'></i>2012-2019</span>
+                            <h3>Mainteneur des installations Télécom - SNCF </h3>
+                            <p>Maintenance des installations de télécomunication et transmission de données dans le domaine ferroviaire (Téléphonie ferroviaire, radio, circuits AF et numérique : cuivre et optique, contrôle d'accès, vidéo protection).</p>
+                        </div>
+                        <div class="workexp">
+                            <span class="year"><i class='bx bx-calendar'></i>2019-2024</span>
+                            <h3>Surveillant travaux Télécom - SNCF </h3>
+                            <p>Surveillance et suivis d'entreprise extérieur pour s'assurer du bon déroulement des phases travaux sur chantier, installation et configuration d'équipements télécom et mis en service en fin de chantier.</p>
+                        </div>
+                    </div>
+                    <span class="number-page">1</span>
+                    <!-- next button -->
+                    <span class="nextprev-btn" data-page="turn-1">
+                        <i class='bx bx-chevron-right'></i>
+                    </span>
+                </div>
+                <!-- page 2  -->
+                <div class="page-back">
+                    <h1 class="title">Formation</h1>
+                    <div class="workexp-box">
+                        <div class="workexp">
+                            <span class="year"><i class='bx bx-calendar'></i>2002-2004</span>
+                            <h3>BEP Electrotechnique </h3>
+                            <p>Lycée Modeste Leroy, Evreux, France.</p>
+                            <p>Réalisation et maintenance de circuits électronique</p>
+                        </div>
+                        <div class="workexp">
+                            <span class="year"><i class='bx bx-calendar'></i>2004-2006</span>
+                            <h3>baccalauréat professionnel MRIM </h3>
+                            <p>Lycée Grieu, Rouen, France</p>
+                            <p>Administration système et réseaux, installation et configuration de composants serveur.</p>
+                        </div>
+                        <div class="workexp">
+                            <span class="year"><i class='bx bx-calendar'></i>2024</span>
+                            <h3>TP Développeur web et web mobile</h3>
+                            <p>Ecole O'Clock en téléprésentiel</p>
+                            <p>Developpement d'application web et web mobile avec spécialisation sur la technologie React.</p>
+                        </div>
+                    </div>
+                    <span class="number-page">2</span>
+                    <!-- back button -->
+                    <span class="nextprev-btn back" data-page="turn-1">
+                        <i class='bx bx-chevron-left'></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- page 3 et 4 -->
+            <div class="book-page page-right turn" id="turn-2">
+                <!-- page 3 -->
+                <div class="page-front">
+                    <h1 class="title">Mes services</h1>
+                    <div class="services">
+                        <div class="service-card">
+                            <span class="service-logo"><i class='bx bx-code-curly' ></i></span>
+                            <h3>Developpeur Applicatif</h3>
+                            <p>Developpement d'application dédiée (automatisation de tâches, logiciel de gestion, traitement de données)</p>
+                        </div>
+                        <div class="service-card">
+                            <span class="service-logo"><i class='bx bx-code-alt' ></i></span>
+                            <h3>Developpeur Web Frontend</h3>
+                            <p>Developpement de site et application Web et Web mobile</p>
+                        </div>
+                    </div>
+                    <span class="number-page">3</span>
+                    <!-- next button -->
+                    <span class="nextprev-btn" data-page="turn-2">
+                        <i class='bx bx-chevron-right'></i>
+                    </span>
+                </div>
+
+                <!-- page 4 -->
+                <div class="page-back">
+                    <h1 class="title">Mes compétences</h1>
+                    <div class="skills">
+                        <h3>Front-End</h3>
+                        <div class="skill-card">
+                            <fieldset class="skill-box">
+                                <legend>HTML</legend>
+                                <span><i class='bx bxl-html5' ></i></span>
+                            </fieldset>
+                            <fieldset class="skill-box">
+                                <legend>CSS</legend>
+                                <span><i class='bx bxl-css3'></i></span>
+                            </fieldset>
+                            <fieldset class="skill-box">
+                                <legend>SASS</legend>
+                                <span><i class='bx bxl-sass' ></i></span>
+                            </fieldset>
+                            <fieldset class="skill-box">
+                                <legend>JavaScript</legend>
+                                <span><i class='bx bxl-javascript' ></i></span>
+                            </fieldset>
+                            <fieldset class="skill-box">
+                                <legend>React</legend>
+                                <span><i class='bx bxl-react' ></i></span>
+                            </fieldset>
+                            <fieldset class="skill-box">
+                                <legend>Redux</legend>
+                                <span><i class='bx bxl-redux' ></i></span>
+                            </fieldset>
+                            <fieldset class="skill-box">
+                                <legend>TypeScript</legend>
+                                <span><i class='bx bxl-typescript' ></i></span>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h3>Back-End</h3>
+                        <div class="skill-card">
+                            <fieldset class="skill-box">
+                                <legend>PHP</legend>
+                                <span><i class='bx bxl-php' ></i></span>
+                            </fieldset>
+                            <fieldset class="skill-box">
+                                <legend>SQL</legend>
+                                <span><i class='bx bxl-postgresql' ></i></span>
+                            </fieldset>
+                            <fieldset class="skill-box">
+                                <legend>PureBasic</legend>
+                                <span><i class='bx bx-code-curly' ></i></span>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h3>Outils</h3>
+                        <div class="skill-card">
+                            <fieldset class="skill-box">
+                                <legend>Git</legend>
+                                <span><i class='bx bxl-git' ></i></span>
+                            </fieldset>
+                            <fieldset class="skill-box">
+                                <legend>Trello</legend>
+                                <span><i class='bx bxl-trello' ></i></span>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <span class="number-page">4</span>
+                    <!-- prev button -->
+                    <span class="nextprev-btn back" data-page="turn-2">
+                        <i class='bx bx-chevron-left'></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- page 5 et 6 -->
+            <div class="book-page page-right turn" id="turn-3">
+                <!-- page 5 -->
+                <div class="page-front">
+                    <h1 class="title">Mes projets</h1>
+                    <div class="project-card">
+                        <div class="project-content">
+                            <img id="project-img" src="./ofourneau.png" alt="ofourneau"> 
+                            <span class="project-span-tech">technologie :
+                                <p id="project-tech">React Symphony Axios</p>
+                            </span>                       
+                            <p id="project-desc">Ofourneau est un site de partage de recette permettant aux utilisateurs non connecter de parcourir et rechercher différentes recettes de cuisine, créer un compte et s'y connecter offre aux utilisateurs une gestion de favoris, la possibilitée de laisser des commentaires et de proposer leurs propres recettes. Il a été développé en 4 semaines comme projet de fin de formation.</p>
+                        </div>
+                        <div class="project-button">
+                            <button id="project-consult">Consulter</button>
+                            <button id="project-next">Suivant</button>
+                        </div>
+                    </div>
+
+                    <span class="number-page">5</span>
+                    <!-- next button -->
+                    <span class="nextprev-btn" data-page="turn-3">
+                        <i class='bx bx-chevron-right'></i>
+                    </span>
+                </div> 
+                <!-- page 6 -->
+
+                <div class="page-back">
+                    <h1 class="title">Me contacter</h1>
+                    <form id="contact-form">
+                        <input type="hidden" name="contact_number">
+                        <input type="text" name="user_name" placeholder="Nom">
+                        <input type="email" name="user_email" placeholder="Email">
+                        <textarea name="message" placeholder="Votre message"></textarea>
+                        <input class="button" type="submit" value="Envoyer">
+                    </form>
+                    <span class="number-page">6</span> 
+                    <!-- next button -->
+                    <span class="nextprev-btn back" data-page="turn-3">
+                        <i class='bx bx-chevron-left'></i>
+                    </span>
+                    <a href="#" class="back-profile">
+                        <p>Profile</p>
+                        <i class='bx bxs-user'></i>
+                    </a>
+                </div>
+            </div> 
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
