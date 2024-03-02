@@ -33,7 +33,7 @@ body{
 
 .wrapper{
     position: relative;
-    width: 66rem;
+    min-width: 66rem;
     height: 45rem;
     padding: 2rem;
     perspective: 250rem;
@@ -48,6 +48,13 @@ body{
     100% {
         opacity: 1;
         transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 1056px){
+    body{
+        overflow: auto;
+        justify-content: left;
     }
 }
 
