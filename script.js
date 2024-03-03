@@ -17,10 +17,10 @@ const projects = [
         url: 'http://www.ofourneau.fr'
     },
     {
-        img: "./profil.png",
-        tech: "Un chose",
-        description: "bla bla bli bla bla blo",
-        url: ''
+        img: "./tetirs.png",
+        tech: "Pure Basic",
+        description: "Voici deux clones du célèbre jeu Tetris. Le premier à été fait avec pour challenge de n'importer aucun sprite, tout est donc \"déssinés\" en code. Le deuxième à été developpé dans le but de tester un moteur d'affichage 2D que j'ai également développé en Pure Basic.",
+        url: 'https://uploadnow.io/fr/share?utm_source=zNcLmpH'
     },
 ];
 
