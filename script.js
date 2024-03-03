@@ -13,7 +13,7 @@ const projects = [
     {
         img: "./ofourneau.png",
         tech: "React",
-        description: "Ofourneau est un site de partage de recette permettant aux utilisateurs non connecter de parcourir et rechercher différentes recettes de cuisine, créer un compte et s'y connecter offre aux utilisateurs une gestion de favoris, la possibilitée de laisser des commentaires et de proposer leurs propres recettes. Il a été développé en 4 semaines comme projet de fin de formation.",
+        description: "Ofourneau est un site de partage de recettes permettant aux utilisateurs non connecteés de parcourir et rechercher différentes recettes de cuisines, créer un compte et s'y connecter offre aux utilisateurs une gestion de favoris, la possibilitée de laisser des commentaires et de proposer leurs propres recettes. Il a été développé en 4 semaines comme projet de fin de formation.",
         url: 'http://www.ofourneau.fr'
     },
     {
