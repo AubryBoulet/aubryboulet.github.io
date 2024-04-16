@@ -13,14 +13,14 @@ const projects = [
     {
         img: "./ofourneau.png",
         tech: "React",
-        description: "Ofourneau est un site de partage de recettes permettant aux utilisateurs non connecteés de parcourir et rechercher différentes recettes de cuisines, créer un compte et s'y connecter offre aux utilisateurs une gestion de favoris, la possibilitée de laisser des commentaires et de proposer leurs propres recettes. Il a été développé en 4 semaines comme projet de fin de formation.",
+        description: "Ofourneau est un site de partage de recette permettant aux utilisateurs non connecter de parcourir et rechercher différentes recettes de cuisine, créer un compte et s'y connecter offre aux utilisateurs une gestion de favoris, la possibilitée de laisser des commentaires et de proposer leurs propres recettes. Il a été développé en 4 semaines comme projet de fin de formation.",
         url: 'http://www.ofourneau.fr'
     },
     {
         img: "./tetirs.png",
         tech: "Pure Basic",
         description: "Voici deux clones du célèbre jeu Tetris. Le premier à été fait avec pour challenge de n'importer aucun sprite, tout est donc \"déssinés\" en code. Le deuxième à été developpé dans le but de tester un moteur d'affichage 2D que j'ai également développé en Pure Basic.",
-        url: 'https://uploadnow.io/fr/share?utm_source=zNcLmpH'
+        url: 'https://drive.google.com/file/d/1g6SS-W3p1tW0u39iqg5ts91ecXPNvSl_/view?usp=sharing'
     },
 ];
 
