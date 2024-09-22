@@ -155,13 +155,19 @@ function handleClickNextProject() {
     if (projectIndex >= projects.length) projectIndex = 0;
     document.querySelector(".project-content").classList.add("fade");
     if (projectTimeout) clearTimeout(projectTimeout)
-    projectTimeout = setTimeout(() => {
-        document.querySelector("#project-img").src = projects[projectIndex].img
-        document.querySelector("#project-desc").textContent = projects[projectIndex].description
-        document.querySelector("#project-tech").textContent = projects[projectIndex].tech
-        document.querySelector(".project-content").classList.remove("fade");
-        projectTimeout = null;
-    },500)
+    const newImg = new Image();
+    newImg.src = projects[projectIndex].img;
+    const startTime = new Date();
+    newImg.onload = () => {
+        const loadTime = new Date();
+        projectTimeout = setTimeout(() => {
+            document.querySelector("#project-img").src = newImg.src
+            document.querySelector("#project-desc").textContent = projects[projectIndex].description
+            document.querySelector("#project-tech").textContent = projects[projectIndex].tech
+            document.querySelector(".project-content").classList.remove("fade");
+            projectTimeout = null;
+        },500 - (loadTime - startTime))
+    }
 }
 
 function handleClickConsultProject() {
