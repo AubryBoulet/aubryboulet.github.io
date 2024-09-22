@@ -22,6 +22,18 @@ const projects = [
         description: "Voici deux clones du célèbre jeu Tetris. Le premier à été fait avec pour challenge de n'importer aucun sprite, tout est donc \"déssinés\" en code. Le deuxième à été developpé dans le but de tester un moteur d'affichage 2D que j'ai également développé en Pure Basic.",
         url: 'https://drive.google.com/file/d/1g6SS-W3p1tW0u39iqg5ts91ecXPNvSl_/view?usp=sharing'
     },
+    {
+        img: "./pacman.png",
+        tech: "JavaScript",
+        description: "Après avoir été initié au JavaScript durant ma formation, j'ai souhaité en apprendre plus sur ce langage. Bien que Pacman soit un jeu simple à développer, l'IA des fantômes est assisté par un petit algorithme de path finding qui leurs permettent de tendre des embuscades efficaces et surprenantes.",
+        url: 'https://mac-man.netlify.app/'
+    },
+    {
+        img: "./synoptique.png",
+        tech: "Pure Basic / React",
+        description: "Synoptique Maker est un générateur de synoptique. Le front de l'application est développé en React et le back tourne sur un serveur web custom multi-thread que j'ai développé en Pure Basic, en respectant les standards sur code MIME et d'une API REST. Le serveur est architecturé autour du modèle MVC.",
+        url: 'http://195.154.167.33:8081/'
+    },
 ];
 
 turnPageBtn.forEach((el, index) => {
@@ -109,10 +121,32 @@ window.onload = function() {
         // these IDs from the previous steps
         emailjs.sendForm('service_8et5r2e', 'template_93rqsyf', this)
             .then(() => {
-                console.log('SUCCESS!');
+                document.querySelector(".contact-message").classList.add("success");
+                const message = document.querySelector(".contact-message.success");
+                message.textContent = "Message envoyé avec succès";
+                message.style.backgroundPosition = "0%";
+                setTimeout(() => {
+                    message.style.backgroundPosition = "100%";
+                }, 5);
+                setTimeout(() => {
+                    message.classList.remove("success");
+                    document.querySelector("#user_name").value = "";
+                    document.querySelector("#user_email").value = "";
+                    document.querySelector("#message").value = "";
+                }, 2000)
             }, (error) => {
-                console.log('FAILED...', error);
-            });
+                document.querySelector(".contact-message").classList.add("fail");
+                const message = document.querySelector(".contact-message.fail");
+                message.textContent = "Une erreur est survenue";
+                message.style.backgroundPosition = "0%"
+                setTimeout(() => {
+                    message.style.backgroundPosition = "100%";
+                }, 5);
+                setTimeout(() => {
+                    message.classList.remove("fail")
+                }, 2000)
+            },
+            );
     });
 }
 

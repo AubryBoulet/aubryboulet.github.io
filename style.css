@@ -469,3 +469,28 @@ align-items: center;
     background: inherit;
     color: var(--main-color);
 }
+
+.contact-message_container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-message{
+    display: none;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    margin: 2px 0 2px;
+}
+
+.contact-message.success{
+    display: inline;
+    background: linear-gradient(to right, rgba(7, 175, 7, 0.9) 50%, rgba(8, 247, 8, 0.9) 50%);
+    background-size: 200% 100%;
+    transition: background-position 2s linear;
+}
+.contact-message.fail{
+    display: inline;
+    background: linear-gradient(to right, rgba(214, 10, 10, 0.9) 50%, rgba(247, 8, 8, 0.9) 50%);
+    background-size: 200% 100%;
+    transition: background-position 2s linear;
+}
