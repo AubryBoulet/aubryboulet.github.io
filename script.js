@@ -160,13 +160,21 @@ function handleClickNextProject() {
     const startTime = new Date();
     newImg.onload = () => {
         const loadTime = new Date();
-        projectTimeout = setTimeout(() => {
+        if (loadTime - startTime < 500){
+            projectTimeout = setTimeout(() => {
+                document.querySelector("#project-img").src = newImg.src
+                document.querySelector("#project-desc").textContent = projects[projectIndex].description
+                document.querySelector("#project-tech").textContent = projects[projectIndex].tech
+                document.querySelector(".project-content").classList.remove("fade");
+                projectTimeout = null;
+            },500 - (loadTime - startTime))
+        } else {
             document.querySelector("#project-img").src = newImg.src
             document.querySelector("#project-desc").textContent = projects[projectIndex].description
             document.querySelector("#project-tech").textContent = projects[projectIndex].tech
             document.querySelector(".project-content").classList.remove("fade");
             projectTimeout = null;
-        },500 - (loadTime - startTime))
+        } 
     }
 }
 
