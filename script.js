@@ -183,7 +183,7 @@ function handleClickConsultProject() {
 }
 
 function handleClickCV() {
-    window.open('https://www.canva.com/design/DAF-MdlYraE/oAsBBPWRP7X2_TYXQvdTJA/view?utm_content=DAF-MdlYraE&utm_campaign=designshare&utm_medium=link&utm_source=editor','blank')
+    window.open('https://drive.google.com/file/d/1klRcgqDu2H0dZ6kAsHftEqPPsHbq2qGc/view?usp=drive_link','blank')
 }
 
 addEventListener("DOMContentLoaded", () => {
